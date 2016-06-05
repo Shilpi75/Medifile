@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.medifile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+   
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/back3"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.iangclifton.android.floatlabel.FloatLabel
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Title: "
+                android:layout="@layout/custom_float_label"
+                android:textColorHint="#444" 
+                android:layout_marginBottom="20dp"/>
+
+            
+
+            <com.example.medifile.Custom_float
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appointment Date: "
+                android:textColor="#2929A3"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Choose Date "
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20dp"
+                     />
+
+                <ImageButton
+                    android:id="@+id/datepick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/date2" />
+            </LinearLayout>
+            
+            <com.example.medifile.Custom_float
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appointment Time: "
+                android:textColor="#2929A3"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Choose Time  "
+                    android:textColor="#000000"
+                    android:textSize="20sp" 
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/timepick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/timepicker" />
+            </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

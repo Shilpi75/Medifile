@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.medifile.AppView" >
+     <item
+        android:id="@+id/edit"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_edit"
+        android:title="edit"/>
+  <item
+        android:id="@+id/delete"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"/>
+
+   
+
+</menu>

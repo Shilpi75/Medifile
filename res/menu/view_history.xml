@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.medifile.ViewHistory" >
+ <item
+        android:id="@+id/edit"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_edit"
+        android:title="edit"/>
+  <item
+        android:id="@+id/delete"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"/>
+         <item
+        android:id="@+id/share"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_share"
+        android:title="Share"/>
+         <item
+        android:id="@+id/call"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_call"
+        android:title="Call"/>
+          
+
+</menu>

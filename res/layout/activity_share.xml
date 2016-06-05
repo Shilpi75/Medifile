@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+<android.support.v4.widget.DrawerLayout
+   
+    android:id = "@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/main1"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <com.example.medifile.CustomTextView2
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/Share"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button1"
+            android:text="SHARE"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+     <ListView 
+         android:background="#ffffff"
+         android:paddingTop="20dp"
+        android:id = "@+id/listView1"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+   
+    ></ListView>
+</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar"
+        layout="@layout/toolbar"/>
+   
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:padding="10dp"
+    android:background="@drawable/emergency"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    
+    <com.example.medifile.Custom_float
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter new number: " 
+        android:textSize="20dp"
+        android:textColor="#2929A3"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="20dp" />
+
+     
+
+   
+                <com.example.medifile.Custom_button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button2"
+                    android:text="SAVE"
+                    android:textColor="#ffffff"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+</LinearLayout>
+</LinearLayout>

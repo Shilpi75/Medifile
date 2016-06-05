@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.medifile.History" >
+
+    <item
+        android:id="@+id/addNew"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_create"
+        
+        android:title="Add"/>
+    <item
+        android:id="@+id/search"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        android:title="Search"/>
+        
+    <item
+        android:id="@+id/delete"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"/>
+         <item
+        android:id="@+id/share"
+         app:showAsAction="always"
+        android:icon="@drawable/ic_share"
+        android:title="Share"/>
+          
+
+</menu>

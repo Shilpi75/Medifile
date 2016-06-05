@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.medifile.Appointments" >
+
+     <item
+        android:id="@+id/addNew"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_create"
+        
+        android:title="Add"/>
+
+</menu>

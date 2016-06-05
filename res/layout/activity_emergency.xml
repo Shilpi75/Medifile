@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/emergency"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchCompat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable Emergency"
+                android:textColor="#5c005c"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.example.medifile.Custom_button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_circle"
+                        android:text="View"
+                        android:textColor="#ffffff"
+                        android:textSize="50dp" />
+
+                    <com.example.medifile.Custom_button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_circle"
+                        android:text="Edit"
+                        android:textColor="#ffffff"
+                        android:textSize="50dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.iangclifton.android.floatlabel.FloatLabel
+                        android:id="@+id/editText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint=" Emergency Contact no.:"
+                        android:inputType="phone"
+                        android:layout="@layout/custom_float_label"
+                        android:textSize="20dp" />
+
+                    <com.example.medifile.Custom_button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_oval"
+                        android:text="Set"
+                        android:textColor="#ffffff"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#ffffff"
+            android:paddingTop="20dp" >
+        </ListView>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
